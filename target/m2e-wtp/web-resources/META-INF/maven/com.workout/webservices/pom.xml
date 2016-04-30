@@ -8,8 +8,24 @@
 	<name>webservices Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
-		<!-- JavaEE APIs -->
+		<!-- File upload -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>1.4</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.2.2</version>
+		</dependency>
 
+		<!-- JavaEE APIs -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
 
 		<!-- Testing Dependencies -->
 		<dependency>
