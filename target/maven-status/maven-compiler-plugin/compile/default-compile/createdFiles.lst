@@ -1,0 +1,5 @@
+com\workout\webservices\domain\Address.class
+com\workout\webservices\services\AddReportFormService.class
+com\workout\webservices\dao\ReportFormDao.class
+com\workout\webservices\domain\ReportFormTO.class
+com\workout\webservices\dao\AddressDao.class
