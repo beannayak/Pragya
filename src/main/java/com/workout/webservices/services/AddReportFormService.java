@@ -50,7 +50,11 @@ public class AddReportFormService {
 		reportForm.setLatitude(reportFormTO.getLatitude());
 		reportForm.setLongitude(reportFormTO.getLongitude());
 		reportForm.setName(reportFormTO.getName());
-		reportForm.setPictureLocation(reportFormTO.getPicture().getOriginalFilename());
+		if (reportFormTO.getPicture() != null) {
+			reportForm.setPictureLocation(reportFormTO.getPicture().getOriginalFilename());
+		} else {
+			reportForm.setPictureLocation("Blank");
+		}
 		
 		return reportForm;
 	}

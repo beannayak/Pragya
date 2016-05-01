@@ -17,10 +17,6 @@
             <form:input path="name" type="text" /> 
             <form:errors path="name" /><br />
             
-            Address:
-            <form:input path="address" type="text" /> 
-            <form:errors path="address" /><br />
-            
             instruction:
             <form:input path="instruction" type="text" /> 
             <form:errors path="instruction" /><br />

@@ -96,7 +96,6 @@
 				id="basic" value="" /> <label for="basic">Text Input:</label> <input
 				type="text" name="name" id="basic" value="" /> <a href="#start">Back
 				to foo</a>
-			</p>
 		</div>
 		<!-- /content -->
 

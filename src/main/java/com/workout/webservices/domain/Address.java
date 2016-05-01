@@ -12,17 +12,17 @@ public class Address {
 	@GeneratedValue
 	private long id;
 
-	@NotEmpty
+	
 	private String lineOne;
 	private String lineTwo;
 
-	@NotEmpty
+	
 	private String city;
 
-	@NotEmpty
+	
 	private String state;
 
-	@NotEmpty
+	
 	private String zip;
 
 	public String getLineOne() {

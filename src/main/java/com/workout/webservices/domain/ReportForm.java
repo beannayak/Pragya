@@ -18,7 +18,7 @@ public class ReportForm {
 	@Lob
 	private String description;
 
-	@OneToOne (cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
+	@OneToOne
 	private Address address;
 
 	@Lob
