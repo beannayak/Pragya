@@ -1,31 +1,20 @@
 package com.workout.webservices.domain;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Lob;
-import javax.persistence.OneToOne;
+import org.springframework.web.multipart.MultipartFile;
 
-@Entity
-public class ReportForm {
-	@Id
-	@GeneratedValue
-	private long id;
-
+public class ReportFormTO {
 	private String name;
-
-	@Lob
 	private String description;
 
-	@OneToOne (cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
-	private Address address;
+	// AddressTO
+	private String lineOne;
+	private String lineTwo;
+	private String city;
+	private String state;
+	private String zip;
 
-	@Lob
 	private String instruction;
-
-	private String pictureLocation;
-
+	private MultipartFile picture;
 	private String latitude;
 	private String longitude;
 	private String altitude;
@@ -46,12 +35,44 @@ public class ReportForm {
 		this.description = description;
 	}
 
-	public Address getAddress() {
-		return address;
+	public String getLineOne() {
+		return lineOne;
 	}
 
-	public void setAddress(Address address) {
-		this.address = address;
+	public void setLineOne(String lineOne) {
+		this.lineOne = lineOne;
+	}
+
+	public String getLineTwo() {
+		return lineTwo;
+	}
+
+	public void setLineTwo(String lineTwo) {
+		this.lineTwo = lineTwo;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+
+	public String getZip() {
+		return zip;
+	}
+
+	public void setZip(String zip) {
+		this.zip = zip;
 	}
 
 	public String getInstruction() {
@@ -62,12 +83,12 @@ public class ReportForm {
 		this.instruction = instruction;
 	}
 
-	public String getPictureLocation() {
-		return pictureLocation;
+	public MultipartFile getPicture() {
+		return picture;
 	}
 
-	public void setPictureLocation(String pictureLocation) {
-		this.pictureLocation = pictureLocation;
+	public void setPicture(MultipartFile picture) {
+		this.picture = picture;
 	}
 
 	public String getLatitude() {
